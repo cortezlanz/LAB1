@@ -133,7 +133,7 @@ if __name__ == "__main__":
 
     # Step 3: Add Students
     print(records.add_student(1, "Lanz Ronan Cortez", "lanz@gmail.com",
-                              {"Math": 90, "English": 89}, {"Math"}))
+                              {"Math": 94, "Comp. Sci.": 91}, {"Math"}))
     print(records.add_student(2, "Lance Cortez", "lance@gmail.com"))
 
     # Step 7: Search Student by ID
@@ -142,11 +142,11 @@ if __name__ == "__main__":
 
     # Step 4: Update Student
     print("\n-- Update Student --")
-    print(records.update_student(2, grades={"Science": 75}, courses={"Science"}))
+    print(records.update_student(2, grades={"IT": 75}, courses={"IT"}))
 
     # Step 6: Enroll in Course
     print("\n-- Enroll Course --")
-    print(records.enroll_course(1, "Science"))
+    print(records.enroll_course(1, "IT"))
 
     # Challenge 2: Search by Name
     print("\n-- Search by Partial Name --")
