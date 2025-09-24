@@ -111,19 +111,20 @@ if __name__ == "__main__":
     print(records.search_student(1))  # Lanz with GPA
     print(records.search_student(2))  # Ronan with GPA
 
-    # Update Bob’s info
+    # Update Ronan’s info
     print(records.update_student(2, grades={"Comp. Sci.": 85}, courses={"Comp. Sci."}))
     print(records.search_student(2))  # GPA updated
 
-    # Enroll Alice in English
+    # Enroll Lanz in IT
     print(records.enroll_course(1, "IT"))
     print(records.search_student(1))
 
-    # Delete Charlie
+    # Delete Cortez
     print(records.delete_student(3))
     print(records.search_student(3))
 
     # Partial name search
     print("Search results for 'lanz':")
     for s in records.search_by_name("lanz"):
+
         print(s)
